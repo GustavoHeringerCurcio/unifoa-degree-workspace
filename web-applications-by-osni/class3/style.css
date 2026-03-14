@@ -1,0 +1,135 @@
+/* seletor universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* faz altura e largura incluirem padding e borda*/
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna*/
+    min-height: 100vh; /* Altura mínima igual a altura da tela*/
+    width: 90%; /*largura de 90% da tela*/
+    max-width: 1200px; /* largura máxima 1200px*/
+    margin: 20px auto; /* centraliza o container*/
+    border: 1px solid#ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
+}
+header, 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    background-color: #444;
+}
+nav ul {
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+nav ul li a {
+    display: block;
+    padding: 15px 20px; /*espaço interno*/
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    
+}
+nav ul li a:hover {
+    background: #666;
+}
+
+main {
+    display: flex;
+    flex: 1; /* ocupa o espaço restante da página*/
+    padding: 20px;
+    gap: 20px; /* Espaçamento entre os elementos*/
+
+}
+
+article {
+    flex: 2; /* ocupa o dobro do espaço do aside*/
+    min-width: 300px; /*largura mínima*/
+    background: #fff; /*fundo branco*/
+    padding: 15px; /*espaço interno*/
+    border: 1px solid #ddd;
+    text-align: center; /*Centraliza conteúdo*/
+
+}
+
+article img {
+    width: 90%;
+    max-width: 650px;
+    height: auto; /*manter a proporção da imagem*/
+}
+.descricao-imagem {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    min-width: 200px;
+
+}
+
+section {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #eee;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px ;
+    font-size: 14px;
+}
+
+.footer-col p {
+    margin: 3px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    border-top: 1px solid black;
+    padding-top: 8px;
+}
+
+@media(max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
