@@ -7,6 +7,8 @@ export default function Home() {
     console.log("Submited")
   }
 
+  
+
 
   return (
     <div className="h-screen bg-gray-100 text-black dark:bg-gray-700 dark:text-white transition-colors duration-300">

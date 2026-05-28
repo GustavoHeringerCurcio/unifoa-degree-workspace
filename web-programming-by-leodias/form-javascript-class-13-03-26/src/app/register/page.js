@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "next/link";n
 import { TextInput, Button } from "flowbite-react";
 
 export default function Register() {
@@ -401,3 +401,4 @@ export default function Register() {
     </div>
   );
 }
+  

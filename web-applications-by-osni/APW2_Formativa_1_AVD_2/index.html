@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prova Formativa 1 - Tailwind CSS</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- 
+        PROVA FORMATIVA 1 - AVD 2
+        Disciplina: Desenvolvimento Web / Aplicações Web
+        Tema: Construção de página com Tailwind CSS
+
+        INSTRUÇÃO:
+        O aluno deverá aplicar classes Tailwind CSS nos elementos HTML abaixo.
+        Não é permitido alterar a estrutura principal da página.
+        O objetivo é transformar este HTML simples em uma landing page moderna,
+        organizada e visualmente agradável.
+    -->
+
+    <!-- AULA / SEÇÃO 1 - CABEÇALHO -->
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">TechCursos</h1>
+
+            <nav class="flex space-x-8">
+                <a href="#" class="hover:text-blue-200 transition duration-300 font-medium">Início</a>
+                <a href="#" class="hover:text-blue-200 transition duration-300 font-medium">Cursos</a>
+                <a href="#" class="hover:text-blue-200 transition duration-300 font-medium">Benefícios</a>
+                <a href="#" class="hover:text-blue-200 transition duration-300 font-medium">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- AULA / SEÇÃO 2 - BANNER PRINCIPAL -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">Aprenda tecnologia de forma prática</h2>
+
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Desenvolva habilidades em programação, web design e ferramentas digitais
+                utilizando projetos práticos e modernos.
+            </p>
+
+            <a href="#" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">Conheça os cursos</a>
+        </div>
+    </section>
+
+    <!-- AULA / SEÇÃO 3 - CURSOS -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Nossos Cursos</h2>
+
+            <p class="text-center text-gray-600 mb-12 text-lg">
+                Escolha uma área de tecnologia para iniciar seus estudos.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-600">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Desenvolvimento Web</h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Aprenda HTML, CSS, JavaScript e Tailwind para criar páginas modernas.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Redes de Computadores</h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Entenda endereçamento IP, equipamentos de rede e serviços essenciais.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-400">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Computação em Nuvem</h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Conheça conceitos de nuvem, serviços Azure e implantação de sistemas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AULA / SEÇÃO 4 - BENEFÍCIOS -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Por que estudar conosco?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mb-4 text-xl font-bold">✓</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Aulas práticas</h3>
+                    <p class="text-gray-700 leading-relaxed">Atividades baseadas em situações reais do mercado de tecnologia.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mb-4 text-xl font-bold">✓</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Projetos guiados</h3>
+                    <p class="text-gray-700 leading-relaxed">Construção de páginas, sistemas e soluções digitais passo a passo.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mb-4 text-xl font-bold">✓</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Preparação profissional</h3>
+                    <p class="text-gray-700 leading-relaxed">Conteúdo voltado para o desenvolvimento de habilidades profissionais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AULA / SEÇÃO 5 - FORMULÁRIO DE CONTATO -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Entre em contato</h2>
+
+            <form class="bg-white p-10 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <label for="nome" class="block text-gray-700 font-semibold mb-2">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300">
+                </div>
+
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300">
+                </div>
+
+                <div class="mb-8">
+                    <label for="curso" class="block text-gray-700 font-semibold mb-2">Curso de interesse</label>
+                    <select id="curso" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300 bg-white cursor-pointer">
+                        <option>Desenvolvimento Web</option>
+                        <option>Redes de Computadores</option>
+                        <option>Computação em Nuvem</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg">Enviar inscrição</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- AULA / SEÇÃO 6 - RODAPÉ -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 font-medium">TechCursos - Prova Formativa 1 - AVD 2</p>
+        </div>
+    </footer>
+
+</body>
+</html>

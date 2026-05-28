@@ -6,7 +6,7 @@ const matrix = [
     [7,8,9]
 ]
 
-//object array
+//object(json) array
 let people = [
     { name: "ana", age:"25"},
     { name: "peter", age:"30"},
